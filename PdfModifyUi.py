@@ -11,10 +11,10 @@ class PdfWindow(QtWidgets.QWidget, Ui_Form):
         super().__init__()
         self.setupUi(self)
         self.doc = None
-        # self.palette = QPalette()
-        # self.brush = QBrush(QPixmap("bg.jpg"))
-        # self.palette.setBrush(QPalette.Background, self.brush)
-        # self.setPalette(self.palette)
+        self.palette = QPalette()
+        self.brush = QBrush(QPixmap("bg.jpg"))
+        self.palette.setBrush(QPalette.Background, self.brush)
+        self.setPalette(self.palette)
         self.idx = 0
 
         self.deletList = []
